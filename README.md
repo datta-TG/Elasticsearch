@@ -64,11 +64,11 @@ If you have a Lite account, you can upgrade it, see [this](https://cloud.ibm.com
 ![Screenshot](test4.PNG)
 
 
-`$ kubectl get pod -n elasctic-example -o wide`
+`$ kubectl get pod -n elastic-example -o wide`
 
 ![Screenshot](test5.PNG)
 
-`kubectl get service -n elasctic-example`
+`kubectl get service -n elastic-example`
 
 ![Screenshot](test6.PNG)
 
