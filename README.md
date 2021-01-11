@@ -6,7 +6,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ## Step 1: Provision Kubernetes Cluster
 
-* Click on the search section at the top of the main page, type Kubernetes and then choose Kurbenetes cluster.
+* Click on the search section at the top of the main page, type Kubernetes, and then choose Kubernetes cluster.
 
 ![](Kubernetes1.PNG)
 
@@ -14,7 +14,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](Kubernetes2.PNG)
 
-* We then wait a few minutes. The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed.
+* Then wait a few minutes. The following checkmark and the word 'normal' will appear once the Kubernetes Cluster is deployed.
 
 ![Screenshot](Kubernetes3.PNG)
 
@@ -24,7 +24,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](Storage1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for this workspace, in this case, it will be called _storage-example_, accept the terms, click *Install* and wait a few minutes.
+* A new window opens, select the cluster, and enter the name you want for this workspace, in this case, it will be called _storage-example_, accept the terms, click *Install* and wait a few minutes.
 
 ![Screenshot](Storage2.PNG)
 
@@ -35,7 +35,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](elastic1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Elasticsearch workspace, in this case, it will be called _elastic-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
+* A new window opens, select the cluster and enter the name you want for the Elasticsearch workspace, in this case, it will be called _elastic-example_, accept the terms, and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
 
 ![Screenshot](elastic2.PNG)
 
@@ -46,17 +46,15 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](test1.PNG)
 
-
 * Click the *Actions* button and select *Web terminal*.
 
 ![Screenshot](test2.PNG)
-
 
 * A window opens to install the web terminal, click *Install* and wait a few minutes.
 
 ![Screenshot](test3.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal and type the following command. It will show you the workspaces of your cluster. You can see *elastic-example* is now active.
+* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *elastic-example* is now active.
 
 `$ kubectl get ns`
 
