@@ -107,6 +107,10 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
+* You can send the following command andd ElasticSearch will return its version in the respond, along with other info.
+
+`$ curl -XGET 'localhost:9200'`
+
 ![Screenshot](test8.PNG)
 
 You have finished the installation, enjoy your Elasticsearch installation!
