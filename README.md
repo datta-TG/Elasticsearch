@@ -6,7 +6,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ## Step 1: Provision Kubernetes Cluster
 
-* Click on the search section at the top of the main page, type Kubernetes, and then choose Kubernetes cluster.
+* Click on the search section at the top of the main page, type Kubernetes, and then choose Kubernetes Service.
 
 ![](Kubernetes1.PNG)
 
@@ -35,7 +35,7 @@ If you have a Lite account, you can upgrade it. Click [here](https://cloud.ibm.c
 
 ![Screenshot](elastic1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Elasticsearch workspace, in this case, it will be called _elastic-example_, accept the terms, and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/contour-Qml0bmFtaS1jb250b3Vy-global#about "here").
+* A new window opens, select the cluster and enter the name you want for the Elasticsearch workspace, in this case, it will be called _elastic-example_, accept the terms, and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here]((https://cloud.ibm.com/catalog/content/elasticsearch-Qml0bmFtaS1lbGFzdGljc2VhcmNo-global "here").
 
 ![Screenshot](elastic2.PNG)
 
