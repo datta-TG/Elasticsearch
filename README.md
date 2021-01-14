@@ -88,6 +88,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 ![Screenshot](test7.PNG)
 
 * Once you have installed the terminal, open it, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *storage-example* is active.
+
 `$ kubectl get ns`
 
 ![Screenshot](testelastic2.png)
@@ -108,7 +109,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](testelastic6.png)
 
-* You can send the following command andd Elasticsearch will return its version in the respond, along with other info. That way you know that Elasticsearch is now active.
+* You can send the following command and Elasticsearch will return its version in the respond, along with other info. That way you know that Elasticsearch is now active.
 
 `$ curl -XGET 'localhost:9200'`
 
