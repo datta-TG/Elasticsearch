@@ -66,7 +66,7 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](elastic1.PNG)
 
-* A new window opens, select the cluster, and then select the workspace you want Elasticsearch to be installed. You can also write a new workspace. In this case, we will use the previously _storage-example_ workspace. Type a workspace name under 'Configure your workspace', accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/elasticsearch "here").
+* A new window opens, select the cluster, and then select the workspace you want Elasticsearch to be installed. You can also write a new workspace. In this case, we will use the previously created _storage-example_ workspace. Type a workspace name under 'Configure your workspace', accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/elasticsearch "here").
 
 ![Screenshot](elastic3.png)
 
