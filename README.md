@@ -90,28 +90,28 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 * Once you have installed the terminal, open it, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *storage-example* is active.
 `$ kubectl get ns`
 
-![Screenshot](testelastic2.PNG)
+![Screenshot](testelastic2.png)
 
 * You can then obtain more data about the service and it's pods. In this case we want to know the pods of the *storage-example* service.
 
 `$ kubectl get pod -n NAMESERVICE`
 
-![Screenshot](testelastic1.PNG)
+![Screenshot](testelastic1.png)
 
 `$ kubectl get service -n NAME SERVICE`
 
-![Screenshot](testelastic4.PNG)
+![Screenshot](testelastic4.png)
 
 * Select the pod within your service using bash so you can start using Elasticsearch from the terminal.
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
-![Screenshot](testelastic6.PNG)
+![Screenshot](testelastic6.png)
 
 * You can send the following command andd Elasticsearch will return its version in the respond, along with other info. That way you know that Elasticsearch is now active.
 
 `$ curl -XGET 'localhost:9200'`
 
-![Screenshot](testelastic5.PNG)
+![Screenshot](testelastic5.png)
 
 You have finished the installation, enjoy your Elasticsearch installation!
