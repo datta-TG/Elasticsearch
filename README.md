@@ -53,11 +53,11 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 * Click on the search section at the top of the main page, select IBM Cloud Block Storage, and click on it.
 
-![Screenshot](Storage1.PNG)
+![Screenshot](StoragePaid1.PNG)
 
 * A new window opens, select the cluster and enter the name you want for this workspace, in this case, it will be called _storage-example_, accept the terms, click *Install* and wait a few minutes.
 
-![Screenshot](StoragePaid1.PNG)
+![Screenshot](StoragePaid2.PNG)
 
 
 ## Step 3: Install Elasticsearch
@@ -66,9 +66,9 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](elastic1.PNG)
 
-* A new window opens, select the cluster and enter the name you want for the Elasticsearch workspace, in this case, it will be called _elastic-example_, accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/elasticsearch "here").
+* A new window opens, select the cluster, and then select the workspace you want Elasticsearch to be installed. You can also write a new workspace. In this case, we will use the previously _storage-example_ workspace. Type a workspace name under 'Configure your workspace', accept the terms and click on *Install*. You can modify the different installation parameters at the bottom. We will leave them by default as shown below, but you can read more about setting up the parameters [here](https://cloud.ibm.com/catalog/content/elasticsearch "here").
 
-![Screenshot](elastic2.PNG)
+![Screenshot](elastic3.PNG)
 
 
 ## Step 4: Verify Installation
@@ -87,32 +87,31 @@ The following checkmark and the word 'normal' will appear once the Kubernetes Cl
 
 ![Screenshot](test7.PNG)
 
-* Once you have installed the terminal, click on the action button again, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *elastic-example* is now active.
-
+* Once you have installed the terminal, open it, select web terminal, and type the following command. It will show you the workspaces of your cluster. You can see *storage-example* is active.
 `$ kubectl get ns`
 
-![Screenshot](test4.PNG)
+![Screenshot](testelastic2.PNG)
 
-* You can then obtain more data about the service and it's pods.
+* You can then obtain more data about the service and it's pods. In this case we want to know the pods of the *storage-example* service.
 
-`$ kubectl get pod -n NAMESERVICE -o wide`
+`$ kubectl get pod -n NAMESERVICE`
 
-![Screenshot](test5.PNG)
+![Screenshot](testelastic1.PNG)
 
 `$ kubectl get service -n NAME SERVICE`
 
-![Screenshot](test6.PNG)
+![Screenshot](testelastic4.PNG)
 
 * Select the pod within your service using bash so you can start using Elasticsearch from the terminal.
 
 `$ kubectl exec --stdin --tty PODNAME -n NAMESPACE -- /bin/bash`
 
-![Screenshot](test8.PNG)
+![Screenshot](testelastic6.PNG)
 
-* You can send the following command andd ElasticSearch will return its version in the respond, along with other info.
+* You can send the following command andd Elasticsearch will return its version in the respond, along with other info. That way you know that Elasticsearch is now active.
 
 `$ curl -XGET 'localhost:9200'`
 
-![Screenshot](test9.PNG)
+![Screenshot](testelastic5.PNG)
 
 You have finished the installation, enjoy your Elasticsearch installation!
